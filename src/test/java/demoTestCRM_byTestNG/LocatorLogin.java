@@ -1,0 +1,10 @@
+package demoTestCRM_byTestNG;
+
+public class LocatorLogin {
+    public static String url = "https://crm.anhtester.com/admin/authentication";
+    public static String inputEmail = "//input[@id='email']";
+    public static String inputPassword = "//input[@id='password']";
+    public static String loginButton = "//button[@type='submit']";
+
+    public static String CustomerItem = "//span[normalize-space()='Customers']";
+}
