@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteRunByClass" verbose="1">
+    <test name="FirstTest">
+        <groups>
+            <run>
+                <exclude name="testTwo"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="bai10_Annotations.Demo_ThuTuChay_Annotations"/>
+        </classes>
+    </test>
+</suite>

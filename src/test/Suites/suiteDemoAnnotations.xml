@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteRunByClass" verbose="1">
+    <test name="FirstTest">
+        <classes>
+            <class name="bai10_Annotations.Demo_Annotations"/>
+            <!-- <class name="bai10_Annotations.Demo_Annotations_Class2"/> -->
+        </classes>
+    </test>
+</suite>

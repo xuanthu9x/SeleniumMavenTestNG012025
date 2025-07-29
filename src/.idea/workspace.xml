@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7af719eb-9e6b-46c8-87e3-c7d79f4acae2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Suites/suitDemoThuTuChayAnnotations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Suites/suiteDemoAnnotations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Suites/suiteRunByClass.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Suites/suiteRunByMethod.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Suites/suiteRunByPackage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Suites/suiteRunByPackageClassMethod.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/TestNG/DemoTestNG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai10_Annotations/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai10_Annotations/Demo_Annotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai10_Annotations/Demo_Annotations_Class2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai10_Annotations/Demo_ThuTuChay_Annotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai9_Package1/Class1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai9_Package1/Class2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai9_package2/Class1_P2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai9_package2/Class2_P2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai9_package3/Class1_P3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/bai9_package3/Class2_P3.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="30YHJ1VnHpjmJCZlhVjlXkniGpD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/SeleniumMavenTestNG012025"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7af719eb-9e6b-46c8-87e3-c7d79f4acae2" name="Changes" comment="" />
+      <created>1753797510885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1753797510885</updated>
+    </task>
+    <servers />
+  </component>
+</project>

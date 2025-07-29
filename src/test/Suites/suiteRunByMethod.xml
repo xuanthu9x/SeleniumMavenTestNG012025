@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteRunByClass" verbose="1">
+    <test name="FirstTest">
+        <classes>
+            <class name="bai9_Package1.Class2">
+                <methods>
+                    <include name= "Test2"/>
+                </methods>
+            </class>
+            <class name="bai9_package2.Class1_P2">
+                <methods>
+                    <exclude name="Test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
