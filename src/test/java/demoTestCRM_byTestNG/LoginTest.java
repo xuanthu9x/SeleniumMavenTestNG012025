@@ -95,7 +95,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void LoginTestWrongPasswordSoftAssert() throws InterruptedException {
-        SoftAssert softAssert = new SoftAssert();
+        SoftAssert softAssert  = new SoftAssert();
         driver.get(LocatorLogin.url);
         // Kiểm tra login title
         String loginTitle = driver.findElement(By.xpath(LocatorLogin.loginTitle)).getText();
