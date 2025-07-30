@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
@@ -25,6 +26,7 @@ public class LoginTest extends BaseTest {
         Assert.assertFalse(errorMessageDisplay.size() > 0, " login successfully -error message is not shown");
         System.out.println("Login successfully");
     }
+
     @Test()
     public void LoginWithoutEmail() throws InterruptedException {
         driver.get(LocatorLogin.url);
@@ -89,6 +91,30 @@ public class LoginTest extends BaseTest {
         String errorMessage = driver.findElement(By.xpath(LocatorLogin.errorMessage)).getText();
         Assert.assertEquals(errorMessage, "Invalid email or password");
         System.out.println("Error message is correctly");
+    }
+
+    @Test
+    public void LoginTestWrongPasswordSoftAssert() throws InterruptedException {
+        SoftAssert softAssert = new SoftAssert();
+        driver.get(LocatorLogin.url);
+        // Kiểm tra login title
+        String loginTitle = driver.findElement(By.xpath(LocatorLogin.loginTitle)).getText();
+        softAssert.assertEquals(loginTitle, "Login1");
+        driver.findElement(By.xpath(LocatorLogin.inputEmail)).sendKeys("admin@example.com");
+        driver.findElement(By.xpath(LocatorLogin.inputPassword)).sendKeys("123456789");
+        driver.findElement(By.xpath(LocatorLogin.loginButton)).click();
+        Thread.sleep(1000);
+        //  Kiểm tra error message có tồn tại không
+        List<WebElement> errorMessageDisplay = driver.findElements(By.xpath(LocatorLogin.errorMessage));
+        Assert.assertTrue(errorMessageDisplay.size() > 0, " login successfully -error message is not shown");
+        System.out.println("Login failed");
+        // Kiểm tra error message có chính xác không
+        if(errorMessageDisplay.size() > 0){
+            String errorMessage = driver.findElement(By.xpath(LocatorLogin.errorMessage)).getText();
+            softAssert.assertEquals(errorMessage, "Invalid email or password");
+            System.out.println("Error message is correctly");
+        }
+        softAssert.assertAll();
     }
 
 
