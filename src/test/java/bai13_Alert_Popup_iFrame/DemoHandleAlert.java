@@ -106,65 +106,15 @@ public class DemoHandleAlert extends BaseTest13{
         alert1.sendKeys("Thư test");
         alert1.accept();
         String inputtedText = driver.findElement(By.xpath("//p[@id='prompt-demo']")).getText();
-        Assert.assertEquals(inputtedText, "You have entered 'Thư test123' !");
-        // Cờ để check đã có action trên alert hay chưa
-        /*boolean hasAction = false;
-        boolean accept = false;
-        boolean dismiss = true;
-        try {
-            if (accept) {
-                dismiss = false;
-                alert1.accept();
-                hasAction = true;
-                accept = true;
-                Thread.sleep(1000);
-            } else if (dismiss) {
-                accept = false;
-                alert1.dismiss();
-                hasAction = true;
-                dismiss = true;
-                Thread.sleep(1000);
-            }
-        } catch (TimeoutException e) {
-            hasAction = false;
-        }
-
-        if (!hasAction) {
-            System.out.printf("No action on alert");
-            Assert.assertTrue(hasAction, "No action on alert");
-        } else if (accept) {
-            System.out.println("You click OK on alert");
-            Assert.assertFalse(accept, "You click OK on alert");
-            String inputtedText = driver.findElement(By.xpath("//p[@id='prompt-demo']")).getText();
-            Assert.assertEquals(inputtedText, "You have entered 'Thư test' !");
-        } else if (dismiss) {
-            System.out.println("You click Cancel on alert");
-            Assert.assertTrue(dismiss, "You don't click Cancel on alert");
-            String inputtedText = driver.findElement(By.xpath("//p[@id='prompt-demo']")).getText();
-            Assert.assertEquals(inputtedText, "You have entered 'Thư test' !");
-        }*/
-
+        Assert.assertEquals(inputtedText, "You have entered 'Thư test' !");
     }
     @Test
-    public void demoHandleAlertInputText() throws InterruptedException {
+    public void alertGetText(){
         driver.get("https://www.lambdatest.com/selenium-playground/javascript-alert-box-demo");
-        Thread.sleep(2000);
-
-        //Mở Alert Input text, click nút Click Me thứ ba
-        driver.findElement(By.xpath("(//button[text()='Click Me'])[3]")).click();
-        Thread.sleep(1000);
-
-        //Khởi tạo class Alert
-        Alert alert3 = driver.switchTo().alert();
-        alert3.sendKeys("Anh Tester Demo Alert");
-        Thread.sleep(1000);
-        alert3.accept();
-
-        Thread.sleep(1000);
-        Assert.assertEquals(driver.findElement(By.xpath("//p[@id='prompt-demo']")).getText(),
-                "You have entered 'Anh Tester Demo Alert' !",
-                "Chưa điền được text");
-
-        Thread.sleep(1000);
+        driver.findElement(By.xpath("(//button[normalize-space()='Click Me'])[3]")).click();
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        System.out.println(alertText);
+        Assert.assertEquals(alertText, "Please enter your name");
     }
 }
