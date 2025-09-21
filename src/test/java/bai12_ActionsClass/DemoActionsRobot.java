@@ -14,7 +14,7 @@ public class DemoActionsRobot extends BaseTest12 {
     @Test
     public void testSendKey() throws InterruptedException {
         Actions action = new Actions(driver);
-    driver.get(LocatorLogin.url);
+        driver.get(LocatorLogin.url);
 
         WebElement inputEmail = driver.findElement(By.xpath(LocatorLogin.inputEmail));
         action.sendKeys(inputEmail, "admin@example.com").perform();
