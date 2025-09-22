@@ -42,4 +42,16 @@ public class Common {
         SoftAssert softassert = new SoftAssert();
         softassert.assertEquals(actual,expected);
     }
+
+    public static void softAssertTrue(Boolean condition, String message){
+        SoftAssert softassert = new SoftAssert();
+        softassert.assertTrue(condition, message);
+    }
+
+    public static void Login() {
+        driver.get(LoginLocator.url);
+        sendKey(By.xpath(LoginLocator.inputEmail),"admin@example.com");
+        sendKey(By.xpath(LoginLocator.inputPassword),"123456");
+        click(By.xpath(LoginLocator.buttonLogin));
+    }
 }
