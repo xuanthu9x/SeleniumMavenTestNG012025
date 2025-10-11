@@ -1,5 +1,6 @@
 package LoginTest;
 
+import LoginTest.HandlePage.HandleLoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -48,10 +49,10 @@ public class Common {
         softassert.assertTrue(condition, message);
     }
 
-    public static void Login() {
-        driver.get(LoginLocator.url);
-        sendKey(By.xpath(LoginLocator.inputEmail),"admin@example.com");
-        sendKey(By.xpath(LoginLocator.inputPassword),"123456");
-        click(By.xpath(LoginLocator.buttonLogin));
-    }
+//    public static void Login() {
+//        driver.get(HandleLoginPage.url);
+//        sendKey(By.xpath(HandleLoginPage.inputEmail),"admin@example.com");
+//        sendKey(By.xpath(HandleLoginPage.inputPassword),"123456");
+//        click(By.xpath(HandleLoginPage.buttonLogin));
+//    }
 }
